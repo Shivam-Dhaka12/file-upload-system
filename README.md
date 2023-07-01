@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# React App with S3 Upload and Lambda Function 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React app that allows users to upload files to Amazon S3. The file upload is handled by a Lambda function, which is triggered when the user clicks the 📂 "Upload" button. The Lambda function then saves the file to an S3 bucket.
 
-## Available Scripts
+The app is hosted on AWS Amplify, which makes it easy to deploy and manage the app.
 
-In the project directory, you can run:
+### Requirements
+- Node.js v14 or later 🔌
+- npm v6 or later 📦
+- AWS Amplify CLI 🛠
+  
+Installation
+Clone the repository:
 
-### `npm start`
+`git clone  https://github.com/Shivam-Dhaka12/file-upload-system.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Code snippet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
+   
+`npm install` 🚀
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Initialize AWS Amplify:
 
-### `npm run build`
+`amplify init` 🛠
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Add the S3 storage resource:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`amplify add storage` 🗄️
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Deploy the app:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`amplify push` 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Open the app in a web browser.
+2. Click the 📂 "Upload" button.
+3. Select a file to upload.
+4. Click the 📂 "Upload" button again.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The file will be uploaded to the S3 bucket. You can view the file in the S3 console.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License. 📝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
